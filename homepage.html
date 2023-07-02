@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .header {
+      height: 20%;
+      background-color: rgba(white, 0.4);
+      top: 0%;
+      position: absolute;
+      z-index: 10;
+      margin-top: 10px;
+    }
+
+    .cname {
+      text-align: center;
+      width: fit-content;
+      font-size: xx-large;
+      font-weight: bolder;
+    }
+
+    .cinfo {
+      font-size: large;
+    }
+
+    .nav-name {
+      padding: 10px 30px 10px 30px;
+      display: inline-block;
+    }
+
+    .nav-name:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .e1 {
+      background-color: red;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      /* max-width: 1000px; */
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .mbody {
+      /* top: 0%; */
+      z-index: 10px;
+    }
+
+    .mid1-pic {
+      margin: 30px 90px 10px 100px;
+      box-shadow: 5px 10px 50px 10px;
+    }
+
+    .t1a {
+      /* display: inline-block; */
+      /* align-content: center; */
+      /* width: fit-content; */
+      text-align: center;
+      /* background-color: yellowgreen; */
+
+    }
+
+    .mid1 {
+      margin: 30px 0px 0px 0px;
+      text-align: center;
+
+    }
+
+    .t1 {
+      font-weight: bolder;
+      font-size: x-large;
+      color: red;
+    }
+
+    .btn0 {
+      background-color: red;
+      padding: 10px 20px 10px 20px;
+      border: 1px solid red;
+      border-radius: 10px;
+      width: fit-content;
+      margin-top: 20px;
+      font-size: large;
+      font-weight: bold;
+      color: white;
+    }
+
+    .mid2 {
+      width: 100%;
+      height: 500px;
+      background-image: url(/images/mid2.jpg);
+      background-size: 100% 100%;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .t2 {
+      font-size: xx-large;
+      font-weight: bolder;
+      color: black;
+      padding: 100px 50px 30px 50px;
+    }
+
+    .t3 {
+      font-size: xx-large;
+      font-weight: bolder;
+      color: black;
+      padding: 30px 50px 30px 50px;
+      border: 1px solid black;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .carp {
+      width: 60%;
+      height: 500px;
+      background-image: url(/images/carpenter.jpg);
+      background-size: 100% 100%;
+      margin-top: 10px;
+      text-align: center;
+      padding: 20px;
+      /* display: inline-block; */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .t4 {
+      font-size: xx-large;
+      font-weight: bolder;
+      color: white;
+      padding: 30px 50px 30px 50px;
+      border: 1px solid white;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+    }
+
+    .t5 {
+      font-size: xx-large;
+      font-weight: bolder;
+      color: black;
+      padding: 30px 50px 30px 50px;
+      border: 1px solid black;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+    }
+
+    .btn1 {
+      display: block;
+      background-color: red;
+      padding: 10px 20px 10px 20px;
+      border: 1px solid red;
+      border-radius: 10px;
+      width: fit-content;
+      margin-top: 20px;
+      font-size: large;
+      font-weight: bold;
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .woo {
+      width: 70%;
+      height: 500px;
+      background-image: url(/images/wood1.jpg);
+      background-size: 100%;
+      /* display: inline-block; */
+      margin: 30px auto 30px auto;
+      padding: 40px 20px 40px 20px;
+      text-align: center;
+
+    }
+
+    .about {
+      font-size: xx-large;
+      display: inline-block;
+      height: fit-content;
+      /* display: grid; */
+      position: sticky;
+      width: fit-content;
+      float: inline-start;
+    }
+
+    .t6 {
+      font-size: medium;
+      padding: 10px 20px 10px 20px;
+    }
+
+    .t6:hover {
+      color: red;
+    }
+
+    .services {
+      font-size: xx-large;
+      display: inline-block;
+      height: fit-content;
+      /* display: grid; */
+      position: sticky;
+      width: fit-content;
+      float: left;
+      margin: 10px 400px 10px 400px;
+    }
+
+    .t9 {
+      padding: 10px 20px 10px 20px;
+      text-align: center;
+      font-size: large;
+    }
+
+    .t7 {
+      font-size: xx-large;
+      color: red;
+      text-align: center;
+    }
+
+    .t8 {
+      font-size: xx-large;
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    .dropbtn {
+      /* background-color: rgb; */
+      /* color: white; */
+      padding: 10px 30px 10px 30px;
+
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(227, 221, 221, 0.6);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      border: 0px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      background-color: rgba(white, 0.1);
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="header">
+    <div class="cname">
+      Woodcraft.ca
+      <img src="/images/bel patra.jpg" alt="" width="20px" height="20px">
+      <div class="cinfo">
+        Custom. Indian. Solid Wood. Since 1974
+      </div>
+    </div>
+    <div class="navbar">
+
+      <div class="dropdown">
+        <p class="dropbtn">DINING</p>
+        <div class="dropdown-content">
+          <a href="#">BINING TABLE</a>
+          <a href="#">DINING CHAIR</a>
+          <a href="#">SIDEBOARDS</a>
+          <a href="#">BUFFET HUCHES</a>
+          <a href="#">RECLAIMED WOOD</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <p class="dropbtn">BEDROOM</p>
+        <div class="dropdown-content">
+          <a href="#">BEDROOM SETS</a>
+          <a href="#">BEDS</a>
+          <a href="#">CABINETS</a>
+          <a href="#">WARDROBES</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <p class="dropbtn">LIVING</p>
+        <div class="dropdown-content">
+          <a href="#">ENTERTAINMENT UNITS</a>
+          <a href="#">COFFEE TABLES</a>
+          <a href="#">END TABLES</a>
+          <a href="#">SOFA TABLES</a>
+          <a href="#">SOFAS</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <p class="dropbtn">OFFICE</p>
+        <div class="dropdown-content">
+          <a href="#">DESKS</a>
+          <a href="#">OFFICE COLLECTIONS</a>
+          <a href="#">BOOK CASES</a>
+          <a href="#">CABINETS</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <p class="dropbtn">CUSTOM</p>
+        <div class="dropdown-content">
+          <a href="#">ALL PIECES</a>
+        </div>
+      </div>
+      <p class="nav-name">WHATS'S NEW</p>
+      <div class="dropdown">
+        <p class="dropbtn">PROMONTION</p>
+        <div class="dropdown-content">
+          <a href="#">CURRENT PROMOTIONS</a>
+          <a href="#">FLOOR MODELS</a>
+        </div>
+      </div>
+      <p class="nav-name"> INSTAGRAM</p>
+      <p class="nav-name">CONTACT</p>
+      <p class="nav-name e1">FREE DEIGN SERVICE</p>
+    </div>
+  </section>
+  <section class="mbody">
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <!-- <div class="numbertext">1 / 3</div> -->
+        <img src="/images/pexels-blank-space-2647714.jpg" style="width:100%" height="600px">
+        <!-- <div class="text">Caption Text</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <!-- <div class="numbertext">2 / 3</div> -->
+        <img src="/images/pexels-engin-akyurt-2092058.jpg" style="width:100%" height="600px ">
+        <!-- <div class="text">Caption Two</div> -->
+      </div>
+
+      <div class="mySlides fade">
+        <!-- <div class="numbertext">3 / 3</div> -->
+        <img src="/images/pexels-scott-webb-2451264.jpg" width="100%" height="600px">
+        <!-- <div class="text">Caption Three</div> -->
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <!-- <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+
+    <div class="mid1">
+      <div class="t1a">
+        <div class="t1">
+          WHAT'S NEW
+        </div>
+      </div>
+
+      <img src="/images/mid1-4.jpg" alt="" width="300px" class="mid1-pic">
+      <img src="/images/mid1-2.jpg" alt="" width="300px" class="mid1-pic">
+      <img src="/images/mid1-3.jpg" alt="" width="300px" class="mid1-pic">
+
+      <button class="btn0">See More</button>
+
+    </div>
+
+    <div class="mid2">
+
+      <div class="t2">INTERIOR DESIGN SERVICES</div>
+      <div class="t3">Any project, big or small — we're here to help turn your ideas into reality.</div>
+      <button class="btn0">BOOK YOUR FREE APPOINTMENT</button>
+
+    </div>
+
+    <div class="bottom">
+      <div class="carp">
+        <div class="t4">Woofcraft's History</div>
+        <img src="/images/made in india logo.jpg" alt="" width="150px" height="150px"
+          style="border-radius: 75px;margin-top: 30px;">
+        <button class="btn1">Read About Our Past, Present & Future</button>
+      </div>
+
+      <div class="woo">
+
+        <div class="t5">See what our
+          customers have to say</div>
+        <img src="/images/comment2.jpg" alt="" width="100px" height="100px"
+          style="border-radius: 100px; margin-left: auto; margin-right: auto; margin-top: 30px; display: block;">
+
+        <button class="btn0">Read Our Customer Testimonials</button>
+
+      </div>
+    </div>
+
+  </section>
+  <div style="height: 1px; background-color: black;"></div>
+  <section class="footer">
+
+    <div class="about">
+      About
+      <!-- <p class="ps"></p> -->
+      <div class="t6">History</div>
+      <div class="t6">Furniture Care</div>
+      <div class="t6">Privacy Policy</div>
+      <div class="t6">Terms and Condition</div>
+      <div class="t6">Testimonial</div>
+      <div class="t6">Designer & Trader</div>
+      <div class="t6">Request a Quote</div>
+      <div class="t6">Blog</div>
+    </div>
+
+    <div class="services">
+      Services
+      <div class="t6">Refinishing</div>
+      <div class="t6">Delivery & Assembly</div>
+      <div class="t6"> Custom Stain</div>
+      <div class="t6">Custom Furniture</div>
+    </div>
+    <div style="height: 1px; background-color: black;"></div>
+
+    <div class="etext">
+      <div class="t7">Call Toll Free 1.866.475.2488</div>
+      <div class="t8">WOODCRAFT</div>
+      <div class="t9">Woodcraft - Maple Tables, and much more.</div>
+      <div class="t9">The rich look of solid Maple, Cherry, Oak, and Pine furniture adds beauty and elegance to any
+        home. Woodcraft takes pride in crafting fine wood furniture of a variety of woods, but Canadian Maple wood is
+        one of our most popular choices.
+
+      </div>
+      <div class="t9">For 43 years we've handcrafted products that are custom sized, and custom stained so every
+        customer will get exactly what they need and want. We build a product range from the most basic to the most
+        stylish, but the solid constants are always Woodcraft's solid quality, solid customer service and our solid
+        guarantee, You'll find all our classic solid wood furniture collections available in Oak, Cherry, Maple and
+        Pine, chosen from Canadian trees, and proudly crafted right here in Canada. Our Maple tables are constructed to
+        give you years of use and enjoyment; their natural patina will deepen with age, giving them a beauty that will
+        always compliment your home. Our maple bedroom sets and entertainment units combine form and function with
+        time-tested solid wood craftsmanship.</div>
+      <div class="t9">Maple dining room tables are the perfect choice for large gatherings; most of our tables are
+        extendable, giving you the option to add up to 4 centre leaves. They are perfect for families with children
+        because their ruggedness will withstand all the punishment your kids can dish out, yet they will age gracefully,
+        looking just as beautiful years from now as they do today. A Woodcraft maple table is versatile enough to use as
+        a kitchen table or dining table, with some wormy maple styles crafted with extra-thick surfaces. Their casual
+        elegance will see you through years of family dinners, as well as any special occasion.</div>
+      <div class="t9">Choose a Woodcraft maple table to add a lifetime of beauty and functionality to your home. Whether
+        you choose a maple dining table, or a maple table for another use in your home, you'll be assured of the same
+        Woodcraft quality you've come to expect from every piece of wood furniture we make.</div>
+      <div class="t9">Our Cross-Canada and the U.S. Delivery continues to increase as confidence with internet
+        purchasing from Woodcraft increases. We have established an easy white-glove, door-to door service. We have
+        trucks shipping to Calgary, Edmonton, Ottawa, Montreal, Victoria and Vancouver Island. Newfoundland, Winnipeg,
+        Thunderbay and locations in the United States on a regular schedule. Call us at 1-866-475-2488 to discuss your
+        order and delivery.</div>
+
+    </div>
+
+    <!-- <div class=""></div> -->
+  </section>
+  <div
+    style="height: 60px; background-color: #717171; margin: 0px 100px 0px 100px; text-align: center; padding: 20px 0px 10px 0px; font-size: large; font-weight: bold; color: white; ">
+    © 2023 WoodCraft.ca. All Rights Reserved.</div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+
+</html>
