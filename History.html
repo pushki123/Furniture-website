@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .e1 {
+            background-color: red;
+        }
+
+        .header {
+            height: 20%;
+            background-color: rgba(white, 0.4);
+            /* top: 0%; */
+            /* position: absolute; */
+            /* z-index: 10; */
+            margin-top: 10px;
+        }
+
+        .cname {
+            text-align: center;
+            width: fit-content;
+            font-size: xx-large;
+            font-weight: bolder;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .cinfo {
+            font-size: large;
+            color: red;
+            cursor: pointer;
+        }
+
+        .nav-name {
+            padding: 10px 30px 10px 30px;
+            display: inline-block;
+        }
+
+        .nav-name:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropbtn {
+            /* background-color: rgb; */
+            /* color: white; */
+            padding: 10px 30px 10px 30px;
+
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(227, 221, 221, 0.6);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border: 0px;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            background-color: rgba(white, 0.1);
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            display: inline-block;
+        }
+
+        .notifier {
+            /* width: fit-content; */
+            padding: 10px 0px 10px 0px;
+            background-color: #e3d8d8;
+            margin: 10px 40px 10px 40px;
+        }
+
+        .img1 {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 500px;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .text1 {
+            width: 80%;
+            text-align: center;
+            margin: 30px auto 30px auto;
+            font-size: larger;
+            font-style: italic;
+
+        }
+
+        .about {
+            font-size: xx-large;
+            display: inline-block;
+            height: fit-content;
+            /* display: grid; */
+            position: sticky;
+            width: fit-content;
+            float: inline-start;
+        }
+
+        .t6 {
+            font-size: medium;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .t6:hover {
+            color: red;
+        }
+
+        .services {
+            font-size: xx-large;
+            display: inline-block;
+            height: fit-content;
+            /* display: grid; */
+            position: sticky;
+            width: fit-content;
+            float: left;
+            margin: 10px 400px 10px 400px;
+        }
+
+        .t9 {
+            padding: 10px 20px 10px 20px;
+            text-align: center;
+            font-size: large;
+        }
+
+        .t7 {
+            font-size: xx-large;
+            color: red;
+            text-align: center;
+        }
+
+        .t8 {
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="cname">
+            Woodcraft.ca
+
+            <img src="/images/bel patra.jpg" alt="" width="20px" height="20px" style="">
+
+            <div class="cinfo">
+                Custom. Indian. Solid Wood. Since 1974
+            </div>
+        </div>
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <p class="dropbtn">DINING</p>
+                <div class="dropdown-content">
+                    <a href="#">BINING TABLE</a>
+                    <a href="#">DINING CHAIR</a>
+                    <a href="#">SIDEBOARDS</a>
+                    <a href="#">BUFFET HUCHES</a>
+                    <a href="#">RECLAIMED WOOD</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">BEDROOM</p>
+                <div class="dropdown-content">
+                    <a href="#">BEDROOM SETS</a>
+                    <a href="#">BEDS</a>
+                    <a href="#">CABINETS</a>
+                    <a href="#">WARDROBES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">LIVING</p>
+                <div class="dropdown-content">
+                    <a href="#">ENTERTAINMENT UNITS</a>
+                    <a href="#">COFFEE TABLES</a>
+                    <a href="#">END TABLES</a>
+                    <a href="#">SOFA TABLES</a>
+                    <a href="#">SOFAS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">OFFICE</p>
+                <div class="dropdown-content">
+                    <a href="#">DESKS</a>
+                    <a href="#">OFFICE COLLECTIONS</a>
+                    <a href="#">BOOK CASES</a>
+                    <a href="#">CABINETS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">CUSTOM</p>
+                <div class="dropdown-content">
+                    <a href="#">ALL PIECES</a>
+                </div>
+            </div>
+            <p class="nav-name">WHATS'S NEW</p>
+            <div class="dropdown">
+                <p class="dropbtn">PROMONTION</p>
+                <div class="dropdown-content">
+                    <a href="#">CURRENT PROMOTIONS</a>
+                    <a href="#">FLOOR MODELS</a>
+                </div>
+            </div>
+            <p class="nav-name"> INSTAGRAM</p>
+            <p class="nav-name">CONTACT</p>
+            <p class="nav-name e1">FREE DEIGN SERVICE</p>
+        </div>
+    </section>
+    <div class="notifier">
+        <p style="display: inline-block; margin-left: 10px;"> HOME / </p>
+        <p style="color: red; display: inline-block; margin-left: 5px;"> Dining Tables</p>
+    </div>
+    <section class="m_body">
+        <div class="img1">
+            <img src="/images/history1.png" alt="" width="100%" height="100%" style="background-size: 100% 100%;">
+        </div>
+        <div class="text1">1974: It was a modest beginning. When we gathered our woodworking tools and set up shop in
+            the old barn at Markham Road and Steeles Avenue—on what was then the very edge of Toronto—we had no idea
+            where our passion for creating furniture would lead us. Sadly, the barn is no longer with us, but the
+            memories of the successes we enjoyed there, as well as the trials and tribulations that are part of every
+            budding business will stay with us always.</div>
+        <div class="img1">
+            <img src="/images/history2.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="text1">We began by making furniture for our friends and acquaintances, then to a wider group of
+            people who liked our furniture and our dedication.</div>
+        <div class="img1">
+            <img src="/images/dt1.jpg" alt="" width="100%" height="100%">
+        </div>
+        <div class="text1">In 1979, one of the first Woodcraft advertisements outlined our philosophy and set a tone for
+            the future that we have adhered to to this day: “Five Solid Reasons To Shop at Woodcraft – Solid Quality,
+            Solid Price, Solid Craftsmanship, Solid Wood, and a Solid Guarantee”.
+            That simple, straightforward approach resonated with Toronto area people and we've never looked back.</div>
+        <div class="img1">
+            <img src="/images/history4.png" alt="" width="100%" height="100%">
+        </div>
+        <div class="text1">Today, our custom, solid wood furniture is known across the world for its superior quality,
+            its elegance, and its lasting value. It looks like being born in a barn isn’t necessarily a hindrance to
+            success.</div>
+    </section>
+    <div style="height: 1px; background-color: black;"></div>
+
+    <section class="footer">
+
+        <div class="about">
+            About
+            <!-- <p class="ps"></p> -->
+            <div class="t6">History</div>
+            <div class="t6">Furniture Care</div>
+            <div class="t6">Privacy Policy</div>
+            <div class="t6">Terms and Condition</div>
+            <div class="t6">Testimonial</div>
+            <div class="t6">Designer & Trader</div>
+            <div class="t6">Request a Quote</div>
+            <div class="t6">Blog</div>
+        </div>
+
+        <div class="services">
+            Services
+            <div class="t6">Refinishing</div>
+            <div class="t6">Delivery & Assembly</div>
+            <div class="t6"> Custom Stain</div>
+            <div class="t6">Custom Furniture</div>
+        </div>
+    </section>
+    <div
+        style="height: 60px; background-color: #717171; margin: 0px 100px 0px 100px; text-align: center; padding: 20px 0px 10px 0px; font-size: large; font-weight: bold; color: white; ">
+        © 2023 WoodCraft.ca. All Rights Reserved.
+    </div>
+
+</body>
+
+</html>
