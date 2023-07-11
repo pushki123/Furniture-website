@@ -129,21 +129,62 @@
         <p class='msg'>Welcome back</p>
         <div class='form'>
             <form>
-                <input type="text" placeholder='Username' class='text' id='username' required><br>
-                <input type="password" placeholder='••••••••••••••' class='password'><br>
-                <a href="#" class='btn-login' id='do-login'>Login</a>
+                <input type="text" placeholder='Email' class='text' id='email' required><br>
+                <input type="password" placeholder='••••••••••••••' class='password' id="password"><br>
+                <a href="#" class='btn-login' id='do-login' onclick=login()>Login</a>
                 <a href="#" class='forgot'>Forgot?</a>
             </form>
         </div>
     </section>
     <!-- partial -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
     <script>
-        var btnLogin = document.getElementById('do-login');
-        var idLogin = document.getElementById('login');
-        var username = document.getElementById('username');
-        btnLogin.onclick = function () {
-            idLogin.innerHTML = '<p>We\'re happy to see you again, </p><h1>' + username.value + '</h1>';
+        email = document.getElementById("email");
+        password = document.getElementById("password");
+        // username = document.getElementById("uname");
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCnvV9BQSiMgdGTdCttBX0fLWVEkDJp_6M",
+            authDomain: "traning-5c90e.firebaseapp.com",
+            databaseURL: "https://traning-5c90e-default-rtdb.firebaseio.com",
+            projectId: "traning-5c90e",
+            storageBucket: "traning-5c90e.appspot.com",
+            messagingSenderId: "60551713961",
+            appId: "1:60551713961:web:79b1054ac1d5ea328305b8",
+            measurementId: "G-TTG0PL6Y9Y"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+        var my_auth = firebase.auth();
+
+
+        function login() {
+            var email = document.getElementById("email")
+            var password = document.getElementById("password")
+            my_auth
+                .signInWithEmailAndPassword(email.value, password.value)
+                .then((uid) => {
+                    var user = uid.user;
+                    console.log(user)
+                    console.log("Logged in")
+                    idLogin.innerHTML = '<p>We\'re happy to see you again, </p><h1>' + username.value + '</h1>';
+                    window.location.href = "/donate.html"
+                        // window.location.href = "/Admin.html";
+
+                }).catch((error) => {
+                    var errorCode = error.code;
+                    // window.location.href = "/movies.html"
+                    var errorMessage = error.message;
+
+                });
+            return false;
+
         }
+
     </script>
 
 </body>
