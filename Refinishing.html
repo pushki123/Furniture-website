@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .e1 {
+            background-color: red;
+        }
+
+        .header {
+            height: 20%;
+            background-color: rgba(white, 0.4);
+            /* top: 0%; */
+            /* position: absolute; */
+            /* z-index: 10; */
+            margin-top: 10px;
+        }
+
+        .cname {
+            text-align: center;
+            width: fit-content;
+            font-size: xx-large;
+            font-weight: bolder;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .cinfo {
+            font-size: large;
+            color: red;
+            cursor: pointer;
+        }
+
+        .nav-name {
+            padding: 10px 30px 10px 30px;
+            display: inline-block;
+        }
+
+        .nav-name:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropbtn {
+            /* background-color: rgb; */
+            /* color: white; */
+            padding: 10px 30px 10px 30px;
+
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropbtn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(227, 221, 221, 0.6);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border: 0px;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            background-color: rgba(white, 0.1);
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            display: inline-block;
+        }
+
+        .notifier {
+            /* width: fit-content; */
+            padding: 10px 0px 10px 0px;
+            background-color: #e3d8d8;
+            margin: 10px 40px 10px 40px;
+        }
+
+        .img1 {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 500px;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .text1 {
+            width: 80%;
+            text-align: center;
+            margin: 30px auto 30px auto;
+            font-size: larger;
+            font-style: italic;
+
+        }
+
+        .about {
+            font-size: xx-large;
+            display: inline-block;
+            height: fit-content;
+            /* display: grid; */
+            position: sticky;
+            width: fit-content;
+            float: inline-start;
+        }
+
+        .t6 {
+            font-size: medium;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .t6:hover {
+            color: red;
+        }
+
+        .services {
+            font-size: xx-large;
+            display: inline-block;
+            height: fit-content;
+            /* display: grid; */
+            position: sticky;
+            width: fit-content;
+            float: left;
+            margin: 10px 400px 10px 400px;
+        }
+
+        .t9 {
+            padding: 10px 20px 10px 20px;
+            text-align: center;
+            font-size: large;
+        }
+
+        .t7 {
+            font-size: xx-large;
+            color: red;
+            text-align: center;
+        }
+
+        .t8 {
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .m_body{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .t1{
+            font-size: larger;
+            font-weight: 900;
+            padding: 10px 20px 10px 20px;
+        }
+        .t2{
+            padding: 10px 20px 10px 20px;
+        }
+        .t3{
+            padding: 5px 60px 0px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="cname">
+            Woodcraft.ca
+
+            <img src="/images/bel patra.jpg" alt="" width="20px" height="20px" style="">
+
+            <div class="cinfo">
+                Custom. Indian. Solid Wood. Since 1974
+            </div>
+        </div>
+
+        <div class="navbar">
+
+            <div class="dropdown">
+                <p class="dropbtn">DINING</p>
+                <div class="dropdown-content">
+                    <a href="#">BINING TABLE</a>
+                    <a href="#">DINING CHAIR</a>
+                    <a href="#">SIDEBOARDS</a>
+                    <a href="#">BUFFET HUCHES</a>
+                    <a href="#">RECLAIMED WOOD</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">BEDROOM</p>
+                <div class="dropdown-content">
+                    <a href="#">BEDROOM SETS</a>
+                    <a href="#">BEDS</a>
+                    <a href="#">CABINETS</a>
+                    <a href="#">WARDROBES</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">LIVING</p>
+                <div class="dropdown-content">
+                    <a href="#">ENTERTAINMENT UNITS</a>
+                    <a href="#">COFFEE TABLES</a>
+                    <a href="#">END TABLES</a>
+                    <a href="#">SOFA TABLES</a>
+                    <a href="#">SOFAS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">OFFICE</p>
+                <div class="dropdown-content">
+                    <a href="#">DESKS</a>
+                    <a href="#">OFFICE COLLECTIONS</a>
+                    <a href="#">BOOK CASES</a>
+                    <a href="#">CABINETS</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p class="dropbtn">CUSTOM</p>
+                <div class="dropdown-content">
+                    <a href="#">ALL PIECES</a>
+                </div>
+            </div>
+            <p class="nav-name">WHATS'S NEW</p>
+            <div class="dropdown">
+                <p class="dropbtn">PROMONTION</p>
+                <div class="dropdown-content">
+                    <a href="#">CURRENT PROMOTIONS</a>
+                    <a href="#">FLOOR MODELS</a>
+                </div>
+            </div>
+            <p class="nav-name"> INSTAGRAM</p>
+            <p class="nav-name">CONTACT</p>
+            <p class="nav-name e1">FREE DEIGN SERVICE</p>
+        </div>
+    </section>
+    <div class="notifier">
+        <p style="display: inline-block; margin-left: 10px;"> HOME / </p>
+        <p style="color: red; display: inline-block; margin-left: 5px;"> Dining Tables</p>
+    </div>
+    <section class="m_body">
+        <!-- <div class="t1">Refunds</div> -->
+        <div class="t2">Well crafted, solid wood furniture can easily last for generations with proper care, but even the best finish will suffer from wear and tear created by growing families – day after day, year after year, decade after decade. Luckily, the Woodcraft Refinishing Service can bring new life and beauty to a finish that is showing its age – and you’ll save up to 65%of the cost of purchasing new furniture.</div>
+        <div class="t1">Better than a face lift</div>
+        <div class="t2">Scratches, surface gouges and a variety of finish discolourations which accumulate on furniture over time are minimized or eliminated in the Woodcraft refinishing process. Even loose joints and most minor repairs can be remedied by our expert staff. Give your lived-in furniture a chance to start over.</div>
+        <div class="t1">Restoration of a family heirloom or antique</div>
+        <div class="t2">At Woodcraft, we’ve been creating fine furniture for over 35 years, so we’re familiar with traditional fine furniture construction and finishing techniques. That means we’re comfortable working with antiques or family heirlooms. Our experienced craftspeople and finishers can restore your well-loved piece to all its former glory.</div>
+        <div class="t1">Updating a tired look</div>
+        <div class="t2">An older original finish can sometimes make furniture look outdated when the rest of a room is redecorated. A choice of new Woodcraft finishes, including solid colours and custom paint finishes can bring an older piece up to date and into sync with the rest of your decor. A decades-old dining set or other fine furniture you’ve loved for years can be restained in a modern colour to suit contemporary styles. Rattan and wicker can be refinished in a new paint, stain or glaze to “renew” it.</div>
+        <div class="t2">Send us an email with photos and dimensions of the furniture you’d like refinished, and we’ll send you an approximate quote.</div>
+        <div class="t2">Or call to arrange to have your furniture picked up, or bring it in to the Woodcraft Workshop & Showroom at 370 Denison St. E. in Markham for a complete estimate. An estimate can be done in your home for a small charge.</div>
+        <div class="t2">CALL 905-475-2488 OR EMAIL info@woodcraft.ca</div>
+        <!-- <div class="t2">If a customer picks up an order(s), it is the responsibility of the customer to thoroughly inspect all the furniture on the order(s) before loading the furniture. When the order leaves Woodcraft’s dock, it is assumed that the piece of furniture was received in good condition.</div>
+        <div class="t2">If a customer elects to pick-up an order and subsequently notices an issue with a piece of furniture which requires transportation back to Woodcraft, it is the responsibility of the customer to bring it back in good condition.</div>
+        <div class="t2">Woodcraft will provide delivery services for an additional charge. Woodcraft will do its utmost to ensure safe handling and transport of its product but cannot be responsible for damages incurred within a client’s home. It is not the responsibility of Woodcraft to move any homeowners possessions. All possessions must be moved out of the way before the delivery begins. Any damage caused by Woodcraft will be appropriately rectified at the discretion of Woodcraft’s management.</div>
+        <div class="t2">Woodcraft is not responsible if the furniture does not fit inside the house. It is the responsibility of the client to measure in advance and ensure that everything will fit. Woodcraft can provide our advice on weather an item can fit, but it is still the clients responsibility. Woodcraft is to be paid in full even if the furniture does not fit inside the house or room.</div> -->
+        <!-- <div class="t2"></div> -->
+        <div class="t1">Refinished by hand</div>
+        <div class="t2">At Woodcraft, old finish “stripping” is done by hand, not dipped and soaked in tanks, so joints and glue are not loosened, wood is not dried out and veneers are not destroyed.</div>
+        <div class="t2">We’re not able to repair damaged veneers, but most surface damage can be eliminated in the refinishing process. Joints can be tightened and reglued if required.</div>
+        <div class="t1">Keeping a piece of history</div>
+        <div class="t2">Some furniture wear-and-tear tells a story. You don’t necessarily have to give up the scratches or marks that recount a bit of family history when your furniture is refinished.at Woodcraft.</div>
+        <!-- <div class="t2">We will do our best to keep you informed of such delays.</div> -->
+        <div class="t1">Contrasting the top</div>
+        <div class="t2">Flat solid wood surfaces, like table tops, can often be sanded down to bare wood which is suitable for any natural wood stain. The table base or legs can then be paint finished or rubbed for a contrasting look.</div>
+        <!-- <div class="t3">1. Payment of outstanding balance must be settled before entering long-term storage. If clients want to inspect the furniture before storing, accommodations for a convenient time for both parties will be agreed.</div>
+        <div class="t3">2. Woodcraft does not have a climate controlled storage facility. Therefore any damage that occurs to furniture pieces as a result of being exposed to a non-climate controlled setting is the sole responsibility of the clients to fix. If Woodcraft elects to do the repair work, the total cost of the repair work will be covered by the client. For greater certainty, there are no refunds or cancellation for damage caused in Long-Term storage. This is a purely a courtesy service we do to go above-and-beyond for our clients.</div>
+        <div class="t3">3. If client wants more packaging than Woodcraft’s standard packaging for Long-Term Storage, then an additional cost will be calculate and charged.</div> -->
+        <div class="t1">Darker to lighter</div>
+        <div class="t2">Furniture originally finished in a dark colour should generally be refinished in a dark colour, but to achieve a lighter shade we sometimes are able to use a colour like our “Butternut”. This stain colour has a number of shades of dark and light, and will lighten the look of a previously dark piece of furniture.</div>
+        <!-- <div class="t2">If a discrepancy is found between in-store pricing or online pricing and our internal price book, the price listed within Woodcraft’s price book is to be considered final.</div>
+        <div class="t1">Sales Price Matching</div>
+        <div class="t2">Woodcraft does not offer price matching on items that become available for sale at a later date. The reason why is that we pre-order lumber at discount rates during that time.</div> -->
+        
+    </section>
+    <div style="height: 1px; background-color: black;"></div>
+
+    <section class="footer">
+
+        <div class="about">
+            About
+            <!-- <p class="ps"></p> -->
+            <div class="t6">History</div>
+            <div class="t6">Furniture Care</div>
+            <div class="t6">Privacy Policy</div>
+            <div class="t6">Terms and Condition</div>
+            <div class="t6">Testimonial</div>
+            <div class="t6">Designer & Trader</div>
+            <div class="t6">Request a Quote</div>
+            <div class="t6">Blog</div>
+        </div>
+
+        <div class="services">
+            Services
+            <div class="t6">Refinishing</div>
+            <div class="t6">Delivery & Assembly</div>
+            <div class="t6"> Custom Stain</div>
+            <div class="t6">Custom Furniture</div>
+        </div>
+    </section>
+    <div
+        style="height: 60px; background-color: #717171; margin: 0px 100px 0px 100px; text-align: center; padding: 20px 0px 10px 0px; font-size: large; font-weight: bold; color: white; ">
+        © 2023 WoodCraft.ca. All Rights Reserved.
+    </div>
+
+</body>
+
+</html>
